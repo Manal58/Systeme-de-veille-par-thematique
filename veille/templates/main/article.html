@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+{% for element in form %}
+Titre :{{element.titre_article}}<br />
+<a href={{element.lien_site}}>lien du site !</a><br />
+<a href={{element.lien_document}}>lien du document !</a><br />
+statut :{{element.nouveau}}<br />
+_____________________________<br />
+{% endfor %}
+</body>
+</html>
+<a href={{element.lien_site}}>lien du site !</a><br />
+lien du site :{{element.lien_site}}
+<a href={{element.lien_document}}>lien du document !</a><br />
+lien du document :{{element.lien_document}}<br />

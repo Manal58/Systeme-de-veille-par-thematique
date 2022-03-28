@@ -1,0 +1,19 @@
+<html>
+<head>
+ <h1>Votre Compte</h1>
+<title>Compte</title>
+ </form>
+
+</head>
+<body>
+<h1>Entrer les informations necessaire (ou none sinon) !</h1>
+<form method="POST" class="post-form">
+ {% csrf_token %}
+ {{ form.as_p }}
+
+
+ <button type="submit" class="save btn">Enregisterer</button>
+</form>
+<a href="artcile.html">votre articles !</a>
+</body>
+</html>

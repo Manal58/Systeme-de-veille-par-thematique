@@ -1,0 +1,13 @@
+<html>
+<head>
+ <h1>Rapprochez vous </h1>
+<title>Formulaire informatif sur l'utilisateur</title>
+ <form method="POST" class="post-form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="save btn">Enregistrer </button>
+ </form>
+
+</head>
+<body> </body>
+</html>
